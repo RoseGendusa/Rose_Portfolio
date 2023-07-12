@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Pathway+Extreme:wght@300&family=Playfair+Display&family=Space+Mono&family=Ysabeau+Infant:ital,wght@1,300&display=swap');
+
+.footer-section{
+    border-radius: 24px;
+    padding: 40px 60px !important;
+    margin:70px;
+    margin-left: 11%;
+    margin-right: 11%;
+    border-radius:20px;
+    position: relative;
+    margin: 0 auto;
+    padding-top:100px !important;
+
+    .footer-container {
+        padding: 40px 60px !important;
+        background-color: rgba(255,255,255,0.05);
+
+        border-radius: 24px;
+    }
+    p {
+        max-width: max-content;
+        margin: auto;
+        margin-top: 40px;
+        font-family: 'Urwdin', monospace !important; 
+        font-weight: 800;
+        line-height: 30px;
+        font-size: 25px;
+        color:white;
+    }
+    @media (max-width:768px) {
+        padding: 60px 20px 30px 20px;
+        .footer-body{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .navbar-brand{
+                width: 180px;
+            }
+            * {
+                width: fit-content;
+            }
+        }
+        p {
+            margin-top: 60px;
+            text-align: center;
+        }
+    }
+}
+
+.navbar-social{
+    .navbar-social-icons{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        a {
+            width: 50px;
+            height: 50px;
+            background: rgba(217,217,217,0.1);
+            display: inline-flex;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            line-height: 1;
+            box-shadow: 2px 3px 5px 0 #ffff;
+            position: relative;
+            &::before {
+                content: "";
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                border-radius: 50%;
+                background: $purple-gradient;
+                filter: $purple-filter;
+                transform: scale3d(0,0,1);
+                transition: all .3s ease-in-out;
+            }
+
+            &::after{
+                pointer-events: none;
+                content: attr(link-title);
+                color: #fff;
+                filter: $blue-filter;
+                position: absolute;
+                bottom: -22px;
+                width: max-content;
+                opacity: 0;
+                transition: all .3s ease-in-out;
+            }
+
+            &:first-child::before, &:nth-child(2)::before{
+                background: $blue-gradient;
+                filter: $blue-filter;
+            }
+            &:hover {
+                &::before{
+                    transform: scale(1);
+                }
+                &::after{
+                    opacity: 1;
+                }
+            }
+            svg {
+                font-size: 26px;
+                color: #fff;
+                z-index: 1;
+                transition: .3s ease-in-out;
+            }
+        }
+
+    }
+}
+
+.navbarr-brand {
+    width: 100%;
+    height: 100%;
+
+
+    &:hover {
+        span::before {
+            opacity: 1;
+            filter: $blue-filter;
+        }
+        svg {
+            filter: $blue-filter;
+        }
+    }
+}

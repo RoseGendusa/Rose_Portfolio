@@ -1,0 +1,115 @@
+/************ Variables ************/
+$purple-filter: drop-shadow(0 0 0.5rem lighten(rgba(170, 54, 124, 0.6), 10%));
+$blue-filter: drop-shadow(0 0 0.5rem lighten(rgba(#0072b1, 0.6), 10%));
+$main-shadow: 0 0 3px 0 #fff;;
+$purple-gradient: linear-gradient(90.21deg, rgba(170, 54, 124, 0.6) -5.91%, rgba(74, 47, 189, 0.8) 111.58%);
+$blue-gradient: linear-gradient(90.21deg, rgba(lighten(#0072b1, 30%), 0.3) -5.91%, rgba(#0072b1, 0.8) 111.58%);
+$blue-gradient2: linear-gradient(90.21deg, rgba(lighten(#0072b1, 30%), 0.6) -5.91%, rgba(#0072b1, 0.8) 111.58%);
+$green-gradient: linear-gradient(0deg, rgba(34,193,195,1) 50%, rgba(253,187,45,1) 97%);
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Pathway+Extreme:wght@300&family=Ysabeau+Infant:ital,wght@1,300&display=swap');
+/************ Component Styles ************/
+@import "./components/NavigationBar/index";
+@import "./components/Profile/index";
+@import "./components/Skills/index";
+@import "./components/Projects/index";
+@import "./components/Projects/ProjectCard/index";
+@import "./components/Footer/index";
+@import "./components/Carousel/index";
+
+
+/************ Fonts ************/
+@font-face {
+	font-family: Urwdin;
+	src: url('./assets/font/URWDIN-Regular.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family:Centra;
+	src: url('./assets/font/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Book.ttf');
+	font-weight: 400;
+}
+
+/************ Global Styles ************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-weight: 400;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #121212 !important;
+    color: #fff !important;
+    font-family: 'Centra', sans-serif !important;
+    // background-image: url('./assets/free-vector.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+p,
+a,
+li,
+button,
+ul {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+@media (min-width:1700px) {
+    main .container {
+        max-width: 100%;
+        padding: 0 150px;
+    }
+}
