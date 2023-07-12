@@ -1,11 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
-// import { Link } from "react-router-dom";
 
 import { ReactComponent as Quotation } from "./icons/quotation.svg";
 
-import { ReactComponent as Twitter } from "./icons/twitter.svg";
-// import WhatsAppSharePage from "../WhatsAppSharePage";
-import { ReactComponent as Whatsapp } from "./icons/whatsapp.svg";
+
 import Error from "../LottieAnimations/Error";
 export default function InfoSec() {
   return (
