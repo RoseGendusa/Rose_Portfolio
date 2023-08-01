@@ -1,4 +1,4 @@
-
+https://gulfidanozturk.netlify.app/
 
 # Rose's Portfolio App
 Welcome to my React Portfolio App! This application showcases my portfolio and highlights my skills, projects, and experience. It is built using React, providing an interactive and user-friendly interface.
